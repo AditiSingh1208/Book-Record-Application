@@ -145,30 +145,4 @@ router.put("/updateBook/:id", (req, res) => {
   });
 });
 
-// router.put("/updateBook/:id", (req, res) => {
-//   const { id } = req.params;
-//   const { data } = req.body;
-
-//   const book = users.find((each) => each.id === id);
-//   if (!book) {
-//     return res.status(404).json({
-//       success: false,
-//       message: "Book Doesn't Exist !!",
-//     });
-//   }
-//   const updateBookData = users.map((each) => {
-//     if (each.id === id) {
-//       return {
-//         ...each,
-//         ...data,
-//       };
-//     }
-//     return each;
-//   });
-//   return res.status(200).json({
-//     success: true,
-//     message: "Book Updated !!",
-//     data: updateBookData,
-//   });
-// });
 module.exports = router;
